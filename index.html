@@ -1,0 +1,81 @@
+<!-- Start from scratch on Jan 30, 2024 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony Su Portfolio</title>
+    
+    <!-- Linking Style Sheet -->
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://kit.fontawesome.com/c79effc83f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <!-- Parent div -->
+    <div class="nav"> 
+        <div class="Logo">
+            <a href="#">Anthony Su.</a>
+        </div>
+        
+        <!-- Container for navigation links and icon -->
+        <div class="nav-container">
+            <div class="Links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+                <div class="toggle_Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Display Navigation Links after Media Query -->
+    <div class="Nav_DropDown">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+    </div>
+    <div class="main_content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis eligendi hic possimus consectetur at commodi libero animi mollitia amet saepe consequuntur ipsum, voluptates vero earum expedita porro eum voluptatem eaque!z</p>
+    </div>
+    
+    <!-- Javascript -->
+    <script>
+        const toggle_Menu = document.querySelector('.toggle_Menu');
+        const toggleBtnIcon = document.querySelector('.toggle_Menu i');
+        const dropDownMenu = document.querySelector('.Nav_DropDown');
+        
+        toggle_Menu.onclick = function () {
+            dropDownMenu.classList.toggle('open'); // Toggle the 'open' class
+            const isOpen = dropDownMenu.classList.contains('open');
+            
+            // Toggle icon class between bars and xmark
+            toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+            
+            toggleBtnIcon.style.fontSize = '1.9em';
+            toggleBtnIcon.style.padding = '20px';
+            
+            // If toggle then show the dropdown menu navigation
+            dropDownMenu.style.display = isOpen ? 'block' : 'none';
+        }
+        
+        // Function to hide the dropdown menu on window resize if width > 992px
+        function adjustNavOnResize() {
+            if (window.innerWidth > 992) {
+                dropDownMenu.style.display = 'none';
+                dropDownMenu.classList.remove('open'); // Ensure the 'open' class is removed
+                toggleBtnIcon.classList = 'fa-solid fa-bars'; // Reset icon to bars
+            }
+        }
+        
+        // Add event listener for window resize
+        window.addEventListener('resize', adjustNavOnResize);
+    </script>
+</body>
+</html>

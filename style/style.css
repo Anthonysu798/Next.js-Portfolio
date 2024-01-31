@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body, html{
+    height: 100%;
+    background-color: #33186B;
+    overflow: hidden;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #190443;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+.Logo a, .Links a, .fa-solid.fa-bars{
+    color: #fff;
+    text-decoration: none;
+}
+
+.Links, .toggle_Menu{
+    display: flex;
+    gap: 20px;
+}
+.toggle_Menu{
+    margin-right: 20px;
+}
+
+
+/* Navigation Menus and Logo */
+.Links a, .Logo, .fa-solid.fa-bars{
+    font-size: 1.9em;
+    padding: 20px;
+}
+
+/* Logo  */
+.Logo a{
+    margin-left: 30px;
+}
+
+/*Nav menu hover */
+.Links a:hover {
+    color: #ffd900;
+    cursor: pointer;
+}
+
+/* Bar */
+.toggle_Menu{
+    display: none;
+}
+
+/* Drop down Navigation Bar */
+.Nav_DropDown{
+    position: absolute;
+    right: 2rem;
+    top: 100px;
+    width: 350px;
+    background-color: #120134;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 20px;
+    display: none;
+    z-index: 1;
+}
+
+
+.Nav_DropDown li{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 2.0em;
+}
+.Nav_DropDown li a{
+    text-decoration: none;
+    color: #e2dada;
+}
+
+.Nav_DropDown li a:hover{
+    color: #ffd900;
+}
+
+
+
+/* Responsive Web design */
+/* Phone Screens */
+@media
+(max-width: 992px) {
+    .Links a{
+        display: none;
+    }
+
+    /* Set the size of the logo */
+    .Logo a{
+        font-size: 0.7em;
+    }
+
+    .toggle_Menu{
+        display: block;
+        color: #fff;
+    }
+    
+}
+
+p{
+    color: black;
+}
+
+.main_content{
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto; 
+    padding: 20px; 
+}
+
+/* 15-16 Inch screens */
+@media only screen 
+  and (min-device-width: 1680px) {
+    
+}
+
+
+/* Monitors */
+@media only screen 
+  and (min-device-width: 1920px) {
+    
+}
