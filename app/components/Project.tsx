@@ -27,8 +27,8 @@ export default function Project() {
 
             teach: [SiNextdotjs, SiReactquery, SiSupabase, SiTailwindcss],
 
-            link: "https://legocolletionanthony.onrender.com/",
-
+            link: "https://my-music-app2023.netlify.app/",
+            
             cover: "/2.png",
 
             background: "bg-cyan-500",
@@ -38,7 +38,7 @@ export default function Project() {
 
             teach: [SiNextdotjs, SiReactquery, SiSupabase, SiTailwindcss],
 
-            link: "https://my-music-app2023.netlify.app/",
+            link: "https://legocolletionanthony.onrender.com/",
 
             cover: "/1.png",
 
@@ -49,7 +49,7 @@ export default function Project() {
 
             teach: [SiNextdotjs, SiReactquery, SiSupabase, SiTailwindcss],
 
-            link: "https://cougar-jodhpurs.cyclic.app/",
+            link: "https://teal-charming-moose.cyclic.app/",
 
             cover: "/3.png",
 
