@@ -14,7 +14,7 @@ export default function HeroSection() {
         
         <p className="md:w-96 text-lg text-gray-300">
         
-        {"I'm a Fullstack developer studying in Seneca College. Making good UI website is my passion."}
+        {"A Fullstack Developer currently studying at Seneca College. I am passionate about creating high-quality UI websites and continually strive to enhance my skills in both front-end and back-end development."}
         </p>
         
         <Link href={"mailto:anthonysu798.ca@gmail.com"} className="inline-block group">
