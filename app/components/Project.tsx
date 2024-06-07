@@ -40,7 +40,7 @@ export default function Project() {
 
 			teach: [SiNextdotjs, SiReactquery, SiSupabase, SiTailwindcss],
 
-			link: "https://lego-collection-nzji.onrender.com/",
+			link: "https://www.legocollection.xyz/",
 
 			cover: "/1.png",
 
