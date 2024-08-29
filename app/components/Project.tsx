@@ -47,16 +47,27 @@ export default function Project() {
 			background: "bg-pink-500",
 		},
 		{
-			title: "React Poster App",
+			title: "Shopping Website",
 
 			teach: [SiNextdotjs, SiReactquery, SiSupabase, SiTailwindcss],
 
-			link: "https://react-poster-pi.vercel.app/",
+			link: "https://shopping-store-nextjs.vercel.app/",
 
-			cover: "/reactPoster.png",
+			cover: "/timbleStore.png",
 
 			background: "bg-yellow-500",
 		},
+		{
+			title: "Belize Job Listing Website",
+
+			teach: [SiNextdotjs, SiReactquery, SiSupabase, SiTailwindcss],
+
+			link: "https://shopping-store-nextjs.vercel.app/",
+
+			cover: "/BelizeJob.png",
+
+			background: "bg-yellow-500",
+		}
 	];
 
 	return (
