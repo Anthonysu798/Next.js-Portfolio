@@ -62,9 +62,20 @@ export default function Project() {
 
 			teach: [SiNextdotjs, SiReactquery, SiSupabase, SiTailwindcss],
 
-			link: "https://shopping-store-nextjs.vercel.app/",
+			link: "https://belize-job-listing.vercel.app/",
 
 			cover: "/BelizeJob.png",
+
+			background: "bg-yellow-500",
+		},
+		{
+			title: "Smmothies E-commerce",
+
+			teach: [SiNextdotjs, SiReactquery, SiSupabase, SiTailwindcss],
+
+			link: "https://www.misskimstore.com/",
+
+			cover: "/misskim11111.jpg",
 
 			background: "bg-yellow-500",
 		}
